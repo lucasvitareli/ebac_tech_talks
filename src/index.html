@@ -1,24 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EBAC Tech Talks</title>
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
     <header class="hero">
-        <div class="hero__container">
-            <img class="hero__container__logo" src="images/ebac_logo.svg" alt="EBAC">
-            <p class="hero__container__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+        <div class="container">
+            <img class="container__logo" src="images/ebac_logo.svg" alt="EBAC">
+            <p class="container__text">
+                O maior evento de tecnologia do Brasil começa em <span id="timer"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__list">
+                    <li class="infos-bar__list__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - Sao Paulo
+                    </li>
+                    <li class="infos-bar__list__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__list__item">
+                        <b>Quando</b>
+                        12/12/2025 as 19:00
+                    </li>
+                </ul>
+                <a class="button button--primary" href="#">Garanta sua vaga</a>
+            </div>
         </div>
 
     </header>
 
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__content">
+                <h2 class="event__content__title">Front-end</h2>
+                <p class="event__content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus error nisi, similique
+                    necessitatibus, consectetur, maiores expedita odio maxime nobis ad blanditiis voluptatem dolor
+                    aperiam amet repellendus. Nemo necessitatibus dolorum quasi?</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+        </div>
+    </section>
 
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__content">
+                <h2 class="event__content__title">UI-UX</h2>
+                <p class="event__content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus error nisi, similique
+                    necessitatibus, consectetur, maiores expedita odio maxime nobis ad blanditiis voluptatem dolor
+                    aperiam amet repellendus. Nemo necessitatibus dolorum quasi?</p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="UI-UX">
+        </div>
+    </section>
 
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__content">
+                <h2 class="event__content__title">Data Science</h2>
+                <p class="event__content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus error nisi, similique
+                    necessitatibus, consectetur, maiores expedita odio maxime nobis ad blanditiis voluptatem dolor
+                    aperiam amet repellendus. Nemo necessitatibus dolorum quasi?</p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="Data Science">
+        </div>
+    </section>
+
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__content">
+                <h2 class="event__content__title">Back-end</h2>
+                <p class="event__content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus error nisi, similique
+                    necessitatibus, consectetur, maiores expedita odio maxime nobis ad blanditiis voluptatem dolor
+                    aperiam amet repellendus. Nemo necessitatibus dolorum quasi?</p>
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="Back-end">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>

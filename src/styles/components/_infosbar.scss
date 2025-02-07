@@ -1,0 +1,45 @@
+@use '../variables';
+
+.infos-bar {
+    padding: 16px 24px;
+    background-color: variables.$txtColor;
+    display: flex;
+    justify-content: space-between;
+
+    &__list {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+
+
+        &__item {
+            font-size: 14px;
+            color:  variables.$secTextColor;
+
+            b {
+                display: block;
+                font-size: 18px;
+                color:  variables.$secTextColor;
+            }
+
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        &__list {
+            display: block;
+
+            &__item {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__list {
+            gap: 16px;
+        }
+    }
+}
